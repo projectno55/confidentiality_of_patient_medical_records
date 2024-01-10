@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/Feedback.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <H1> CONFIDENTIALITY OF PATIENT RECORDS </H1>
+  </header>
+         <div class="main">
+	<div class="container">
+		<form action="" method="POST">
+			{% csrf_token %}
+			<div class="contact-box">
+				<div class="left"></div>
+				<div class="right">
+					<h2>FEEDBACK</h2>
+					<!-- <h5>our contact information is 99999999 </h5> -->
+          		<br>
+					<input type="text" id="name" name="name" class="field"  placeholder="Your Name" required>
+					<input type="text" id="email" name="email" class="field"  placeholder="Your Email" required>
+					<!-- <input type="text" id="phonenumber" name="phonenumber" class="field"  placeholder="Phone"> -->
+					<textarea placeholder="Message" id="msg" name="message" class="field" required></textarea>
+					<button class="btn">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+  <footer>
+    &copy; 2024 Confidentiality Of Patient Records. All rights reserved.
+  </footer>
+</body>
+</html>

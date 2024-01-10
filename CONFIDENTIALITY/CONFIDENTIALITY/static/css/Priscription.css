@@ -1,0 +1,113 @@
+body {
+    font-family:serif;
+    background-color: #f2f2f2;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.header {
+    background: linear-gradient(to bottom, #8baca5, #38d0de, #03d9ed);
+    width: 100%;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background: linear-gradient(rgba(63, 61, 61, 0.5), rgba(63, 61, 61, 0.5)),url(plus.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1 {
+    color: #1b1b1b;
+    text-align: center;
+}
+
+.details {
+    background-color: #00000078;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-image: url(priscriptionbg.jpg);
+}
+
+.details p {
+    color: #333;
+}
+
+.tab {
+    width: 250px;
+    text-align: justify;
+}
+
+ol {
+    padding: 0;
+    margin: 10px 0;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-style: 25px;
+    text-align: justify;
+    color: #757575; /* Green color for tablets */
+}
+span{
+    color: #333;
+}
+.sign {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-end;
+}
+.sign .img{
+    background-image: url(sign.png);
+    background-size: cover;
+    width: 100px;
+    height: 50px;
+    margin-right: 50px;
+}
+.sign p{
+    margin-right: 55px;
+}
+.greet {
+    font-family:serif;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 1px;
+    margin-top: -20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.greet h1{
+    /* font-family: serif;   */
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.greet h2{
+    font-family: serif;  
+}
+.greet p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: serif;
+}

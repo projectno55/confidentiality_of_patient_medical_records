@@ -1,0 +1,268 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2e0e2;
+    /* background-image: url(aboutusBG.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+Body h1{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    background-color: rgb(99, 255, 229);
+    background: linear-gradient(to bottom, #8baca5, #38d0de, #03d9ed);
+    color: linear-gradient(to right,#1d1c1c , #808080,#f0f0f0);
+}
+Body h2{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    /*text-decoration: underline;
+    /* background-color: rgb(99, 182, 255); */
+    color: #202020;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+.header{
+    margin-top: -40Px;
+    width: 100%;
+    padding-top: 5px;
+}
+.posters{
+    
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(63, 61, 61, 0.5), rgba(63, 61, 61, 0.5)),url(About.jpg);
+    /*background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(128, 128, 128, 0.8));*/
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.maincontainer{
+    background: linear-gradient(rgba(63, 61, 61, 0.5), rgba(63, 61, 61, 0.5)),url(aboutusBG.jpg);
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+    background-color: #434343;
+    margin: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+nav a:hover {
+    color: rgb(33, 134, 164);
+}
+
+.About1{
+    width: 1100px;
+    text-align: center;
+}
+.About1:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+h3{
+    font-size: 40px;
+    text-align: left;
+    color: #000000;
+    /*text-decoration: underline;*/
+}
+p{
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+    text-align: justify;
+}
+
+.About1{
+    padding: 30px;
+    margin-left: 200px;
+    background-color:rgba(255, 255, 255, 0.564);
+}
+.About1:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10.1);
+    transition: 0.5s;
+    background-color: #aed8ff70;
+    color: #ffffff;
+    background-position: center;
+    background-size: cover;
+}
+.Outercontact{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1400px;
+    margin-bottom: 100px;
+}
+
+.Aboutus1{
+    width: 400px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+.Aboutus1:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10.1);
+    transition: 0.5s;
+    background-color: #aed8ff70;
+    color: #ffffff;
+    background-position: center;
+    background-size: cover;
+}
+
+.Aboutus1 h2{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    color: #000000;
+}
+.Aboutus1 p, h2:hover{
+    color: white;
+    
+}
+
+.Aboutus1 p{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    color: #c9adad;
+}
+
+/* Overall styling */
+.team {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .Outercontact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .Aboutus1 {
+    width: 500px; /* Adjust for desired width */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; /* For hover effect */
+  }
+  
+  .Aboutus1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Aboutus1 h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Interactive elements */
+  .Aboutus1 p:hover {
+    cursor: pointer; /* Indicate interactivity */
+    color: #007bff; /* Link-like color change on hover */
+  }
+  
+  /* Additional styling */
+  .Aboutus1 h2 {
+    font-size: 1.5em;
+  }
+  
+  .Aboutus1 p {
+    margin-bottom: 5px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .Aboutus1 {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+
+.footer{
+    margin: 0px;
+    margin-top: -100px;
+    padding: 0px;
+    display: block;
+    background-color: #434343;
+    height: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+.footer h6 {
+    font-size: 20px;
+}
+.footer p{
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: -10px;
+}

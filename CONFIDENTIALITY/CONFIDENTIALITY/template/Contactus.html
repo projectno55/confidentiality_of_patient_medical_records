@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Contactus.css' %}">
+</head>
+<body>
+    <H1> CONFIDENTIALITY OF PATIENT RECORDS </H1>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                <li><a href="{% url 'services' %}">Services</a> </li>
+                <li><a href="{% url 'contactus' %}">Contact Us</a> </li>
+                <li><a href="{% url 'feedback' %}">Feedback</a> </li>
+            </ul>
+        </nav>
+</div>
+
+    <div class="heading">
+        <H2>CONTACT US </H2>
+    </div>
+    <div class="poster">
+        
+    </div>
+
+    <div class="maincontainer">
+    <div class="Content"> 
+        <h2>  Customer Support: </h2>
+        <p> Need a hand navigating our application or have general questions? Reach out to our friendly customer support team! For technical glitches or specific tech queries, our dedicated technical support team is ready to assist. <br> Your satisfaction is our priority let us make your experience seamless. Contact us today for a smoother journey with our application.
+            <BR> 
+            Email: support@PatientRecords@gmail.com <br>
+            Phone: 1234567890
+        </p>
+    </div>
+    
+    <div class="feed">
+        <div class="feedback">
+            <form action="" method="POST">
+                {% csrf_token %}
+            <h3> Contact Us</h3>
+                <label for="name">  Name: &nbsp; &nbsp;
+                    <input type="text" id="username" name="username" required placeholder="Name">
+                </label> 
+                <label for="Email"> Email: &nbsp; &nbsp;
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </label> 
+                <label>Enter Your Message: </label> <br>
+                <textarea class="Box" name="message" class="textarea" required placeholder="Please Enter The Feedback"></textarea>
+        
+                <button type="submit">Submit </button> 
+
+            </form>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="footer">
+            <H5> © 2023 | Confidentiality Of Patient Records  | All rights reserved. </H5> 
+        </div>
+    </footer>
+
+</body>
+</html>

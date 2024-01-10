@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Aboutus.css' %}">
+</head>
+<body>
+    <H1> CONFIDENTIALITY OF PATIENT RECORDS </H1>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                <li><a href="{% url 'services' %}">Services</a> </li>
+                <li><a href="{% url 'contactus' %}">Contact Us</a> </li>
+                <li><a href="{% url 'feedback' %}">Feedback</a> </li>
+            </ul>
+        </nav>
+</div>
+
+    <div class="heading">
+        <H2>ABOUT US </H2>
+    </div>
+    <div class="posters">
+        
+    </div>
+<div class="maincontainer">
+    <div class="acontent">
+        <div class="About1">
+            <h3>Our Mission</h3>  
+        <p> Our mission is unwavering: to uphold the highest standards of data privacy. We are committed to implementing robust security measures, ensuring the utmost confidentiality and protection of sensitive healthcare information. 
+            Through continuous innovation and strict adherence to industry regulations, our goal is to foster a secure environment, instilling trust in patients and healthcare providers alike. Your privacy is our priority.
+        </div>
+        </p>
+
+        <div class="About1">
+            <h3> Security Measures</h3>
+        <p> Our security measures  are comprehensive and advanced, encompassing state-of-the-art encryption protocols and secure access controls. Regular audits and monitoring ensure ongoing compliance, while stringent authentication processes fortify the protection of sensitive healthcare information. 
+            Our commitment extends beyond meeting regulatory standards; we proactively implement cutting-edge technologies to guarantee the highest level of security, prioritizing the privacy and integrity of patient records.
+        </div>
+        </p>
+    </div>
+    <div class="team"> <H2>OUR TEAM </H2></div>
+    
+    <div class="Outercontact">
+
+        <div class="Aboutus1">
+            <h2> vamsikrishna </h2>  
+            <p>boppudivamsikrishna0116@gmail.com</p>
+            <p>8790182471 </p>
+        </div>
+
+        <div class="Aboutus1">
+            <h2> sravan Kumar  </h2>
+            <p>sravankalluru9490@gmail.com</p>
+            <p> 9490182601 </p>
+        </div>
+            
+        <div class="Aboutus1">
+            <h2>vedhasriperla </h2>
+            <p>vedhasriperla269@gmail.com</p>
+            <p> 7330775714 </p>
+        </div>
+        
+    </div>
+</div>
+    <footer>
+        <div class="footer">
+            <H6> © 2023 | Confidentiality Of Patient Records  | All rights reserved. </H6> 
+        </div>
+    </footer>
+
+</body>
+</html>

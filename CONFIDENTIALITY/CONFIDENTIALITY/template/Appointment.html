@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Appointment.css' %}">
+</head>
+<body>
+    <H1> CONFIDENTIALITY OF PATIENT RECORDS </H1>
+    <div class="wrapper" >
+        <h2>Appointment Details</h2>
+        <!-- onsubmit="handleFormSubmission(event)" -->
+        <form id="appointmentForm" action="" method="POST" >
+            {% csrf_token %}
+            <div class="details">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" name='name' required><br>
+            </div>
+            <div class="details">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name='age' min="0" required><br>
+            </div>
+            <div class="details">
+                <label for="phoneNo">Phone Number:</label>
+                <input type="tel" id="phoneNo" name='phoneNo' maxlength="10" required><br>
+            </div>
+            <div class="details">
+                <label for="appointmentDate">Appointment Date:</label>
+                <input type="text" id="appointmentDate"  name='appointmentDate' maxlength="10" placeholder="YYYY-MM-DD" required><br>
+            </div>
+            <div class="details">
+                <label for="symptoms">Symptoms:</label>
+                <textarea id="symptoms" rows="4" name='symptoms' required></textarea><br>
+            </div>
+            <div class="btn">
+                <button type="submit"><b>Submit Appointment</b></button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function handleFormSubmission(event) {
+            // Prevent the form from submitting the traditional way
+            event.preventDefault();
+
+            // Perform your form submission logic here (e.g., AJAX request)
+
+            // Show a notification for successful submission
+            alert('Appointment submitted successfully!');
+            // You can replace the alert with a more sophisticated notification or handle it differently based on your requirements.
+        }
+    </script>
+</body>
+</html>

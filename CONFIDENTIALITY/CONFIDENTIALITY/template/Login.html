@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <H1> CONFIDENTIALITY OF PATIENT RECORDS </H1>
+    <div class="container">
+        <h2> LOGIN </h2>
+        <div class="innerdiv1">
+        
+        <form action="" method="POST">
+        {% csrf_token %}
+            
+            <label for="username"> <i class='fas fa-user-alt' style='font-size:20px'></i> &nbsp; Username:
+            <input type="text" id="username" name="username" required placeholder="Username">
+        </label> 
+            <label for="password"><i class='fas fa-lock' style='font-size:20px'></i> &nbsp; Password:
+            <input type="password" id="password" name="password" required placeholder="Password">
+        </label>
+        
+        <button type="submit">Login </button> 
+        </form>
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a>.</p>
+        </div>
+    </div>
+
+</body>
+</html>

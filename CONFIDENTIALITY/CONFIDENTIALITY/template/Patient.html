@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Page</title>
+   
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Patient.css' %}">
+</head>
+<body>
+   <body>
+      <H1> CONFIDENTIALITY OF PATIENT RECORDS  </H1>
+
+      <div class="header">
+         <nav>
+             <ul>
+                 <li><a href="{% url 'home' %}">Home</a></li>
+                 <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                 <li><a href="{% url 'services' %}">Services</a> </li>
+                 <li><a href="{% url 'contactus' %}">Contact Us</a> </li>
+                 <li><a href="{% url 'feedback' %}">Feedback</a> </li>
+             </ul>
+         </nav>
+ </div>
+      <!-- <H2> PATIENT INFORMATION FORM </H2> -->
+      
+      <div class="wrapper">
+      <marquee behavior="" direction="" > <h4 class="note">Note:  Please fill all the information as accurately as possible. 
+         The information you provide  will assist in formulating a complete health profile.
+         All Answers are confidential.</h4></marquee>
+      <form action="" method="POST">
+         {% csrf_token %}
+         <div class="title"><h2>PATIENT FORM</h2>  </div> <br>
+         <div class="form">
+            <div class="first">
+               <div class="title"> PATIENT INFORMATION </div> 
+               <div class="inputfield" >
+                  <label>Name</label>
+                  <input type="text" name="name" class="input" required>
+               </div>
+               <div class="inputfield" >
+                  <label>Gender</label>
+                  <input type="text" name="gender" class="input" required>      
+               </div>
+               <div class="inputfield" name="date_of_birth">
+                  <label>Date Of Birth</label>
+                  <input type="" name="date_of_birth" placeholder="YYYY-MM-DD" class="input" required>
+               </div>
+               <!-- <div class="inputfield" >
+                  <label>Email</label>
+                  <input type="email" name="email" class="input">
+               </div> -->
+               <div class="inputfield" >
+               <label>Aadhar Number</label>
+               <input type="text" name="aadharnumber" maxlength="12" class="input" required>
+            </div>
+               <div class="inputfield" >
+               <label>Email</label>
+               <input type="text" name="email" class="input">
+            </div>
+            <div class="inputfield" >
+               <label>Phone Number</label>
+               <input type="text" name="phonenumber" maxlength="10" class="input" required>
+            </div>
+            <div class="inputfield" >
+               <label>Marital Status</label>
+               <input type="text" name="maritalstatus" class="input" required>
+            </div>
+               <div class="inputfield" >
+                  <label>BLOOD Group</label>
+                  <input type="text" name="bloodgroup" class="input">
+               </div>
+               <div class="inputfield">
+               <label>Address</label>
+               <textarea name="address" class="textarea" required></textarea>
+            </div>
+            <div class="inputfield">
+               <label>Health Concerns / Symptoms: <br>
+                  <!-- (Describe your main Concerns Symptoms Diagnosis Duration etc.)  -->
+               </label>
+               <textarea name="symptoms" class="textarea" required placeholder="Describe your main Health Concerns and Symptoms..."></textarea>
+            </div>
+         </div>
+       <div class="second">
+         <div class="title">
+            EMERGENCY CONTACT
+          </div>
+          <div class="inputfield" >
+            <label>Name</label>
+            <input type="text" name="ename" class="input" required>
+         </div>
+         <div class="inputfield" >
+            <label>RelationShip</label>
+            <input type="text" name="relation" class="input" required>
+         </div>
+           <div class="inputfield">
+             <label> Contact No.</label>
+             <input type="text" name="emergencynumber" class="input" required>
+          </div>
+         <div class="inputfield">
+           <button class="btn">Submit</button>
+         </div>
+       </div>
+    </div>
+  </form>
+</div>
+   
+</body>
+</html>

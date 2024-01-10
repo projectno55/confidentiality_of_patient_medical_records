@@ -1,0 +1,59 @@
+<!-- appointment_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved Appointments</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Priscription.css' %}">
+</head>
+<body>
+
+    <div class="header">
+        <H1> CONFIDENTIALITY OF PATIENT RECORDS </H1>
+    </div>
+    <div class="container" class="blurred">
+        <h1>PRESCRIPTION DETAILS</h1>
+        <div class="details">
+            {% if approved_appointments %}
+                <ul>
+                    {% for app in approved_appointments %}
+                        <p>Name : {{ app.name }} </p>
+                        <p>Appointment Date : {{ app.appointmentDate }}</p>
+                        <p>Symptoms : {{ app.symptoms }}</p>
+                    {% endfor %}
+                </ul>
+                <hr>
+                <p>By going through your symptoms, we recommend the following tablets:</p>
+                <ol>
+                    <li>TAB 1 : <span> LORATADINE - 10 </span></li>
+                    <li>TAB 2 : <span> IBUPROFEN - 10</span></li>
+                    <li>TAB 3 : <span> OMEPRAZOLE - 10</span></li>
+                    <li>TAB 4 : <span> AMLODIPINE - 10</span></li>
+                    <li>TAB 5 : <span> RANITIDINE - 10</span></li>
+                </ol>
+            </div>
+
+            <div class="greet">
+                <h1>Prescription Submitted</h1>
+                <h2>Your health is our priority, and your prescription has been received with gratitude.</h2>
+                <p>Wishing you a speedy recovery and good health ahead!</p>
+            </div>
+
+        {% else %}
+            <p>No approved appointments available.</p>
+        {% endif %}
+    </div>
+
+    <script>
+        // Simulate a 10-second delay for demonstration purposes
+        setTimeout(function() {
+            document.body.classList.remove('loading');
+            document.querySelector('.blurred').classList.remove('blurred');
+            document.querySelector('.loader').style.display = 'none';
+        }, 10000);
+    </script>
+</body>
+</html>
